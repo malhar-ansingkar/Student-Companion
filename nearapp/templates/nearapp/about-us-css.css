@@ -1,0 +1,313 @@
+/* navbar-1 start */
+.b-navbar-container {
+  background-color: #272d33;
+  position: sticky;
+  top: 0px;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+}
+#navbar-expand-lg-1 {
+  background: #edeff1;
+}
+#navbar-nav-1 {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+#m-navbar-1-item {
+  height: 50%;
+  padding: auto 15px auto 15px;
+  text-align: center;
+  width: auto;
+  font-weight: bold;
+  margin: 5px 30px;
+  color: #2b2b2b;
+  font-family: "Verdana";
+
+  border: 2px solid #272d33;
+  border-radius: 60px;
+}
+#m-navbar-1-main {
+  font-family: "Domine", serif;
+  color: #272d33;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.navbar-brand {
+  letter-spacing: 3px;
+}
+
+/* navbar-1 end */
+
+/* navbar-2 start */
+
+#navbar-expand-lg-2 {
+  background-color: #272d33;
+  border-bottom: 1px solid white;
+}
+
+#navbar-nav-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#m-navbar-2-item {
+  color: white;
+  font-weight: bold;
+}
+
+.new-navbar-2 {
+  color: white;
+  font-size: larger;
+  justify-self: center;
+  align-self: center;
+}
+.navbar-toggler-icon {
+  padding-top: 5px;
+}
+.fa-chevron-circle-down {
+  color: #272d33;
+  font-size: larger;
+}
+
+/* navbar-2 end */
+/* footer start */
+.b-footer {
+  width: 100%;
+  background-color: #272d33;
+  padding: 30px 50px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-footer-1 {
+  background-color: #fff;
+  margin-top: 4%;
+  border-radius: 50px;
+  padding: 30px 40px;
+}
+.inner-footer-1 h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.inner-footer-1 p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.inner-footer-2 {
+  margin-top: 4%;
+  padding: 20px 0px;
+}
+.inner-footer-2 div button {
+  background: transparent;
+  border: 0px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+#m-navbar-1-item {
+  background-color: #272d33;
+  color: #fff;
+}
+#m-footer-1-button {
+  background-color: #272d33;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+.inner-footer-2 h2 {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.inner-footer-2 p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.inner-footer-2 .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.copyright-paragraph {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+}
+@media only screen and (max-width: 768px) {
+  #m-navbar-1-main {
+    letter-spacing: normal;
+  }
+  .inner-footer-1 {
+    font-size: 1rem;
+  }
+  .inner-footer-1 h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .inner-footer-1 p {
+    font-size: 1rem;
+  }
+  .inner-footer-2 h2 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .inner-footer-2 p {
+    font-size: 1rem;
+  }
+  .inner-footer-2 div button {
+    font-size: 1rem;
+  }
+  .copyright-paragraph {
+    font-size: 5px;
+  }
+}
+
+/* footer end*/
+
+/*////////////main content///////////*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #272d33;
+}
+
+.main-about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: transparent;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.about-us-heading {
+  width: 100%;
+  height: 100px;
+  font-family: "Domine", serif;
+  border-bottom: 1px solid #fff;
+}
+
+.about-us-heading h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 25px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  height: 100%;
+}
+
+.about-us-student {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Domine", serif;
+  color: #fff;
+}
+
+.about-us-student h1 {
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.about-us-student h2 {
+  padding-top: 20px;
+}
+
+.about-us-description {
+  margin: 50px 0px;
+  padding: 50px;
+  font-size: 1.2rem;
+  width: 50%;
+  background-color: #272d33;
+  color: #fff;
+}
+
+.main-contact-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.contact-us-heading {
+  width: 100%;
+  height: 100px;
+  font-family: "Domine", serif;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.contact-us-heading h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 25px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  height: 100%;
+}
+.main-contact-us h4 {
+  padding-top: 20px;
+}
+.main-contact-us h5 {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .main-about-us {
+    flex-direction: column;
+  }
+  .about-us-heading {
+    border-bottom: 1px solid #fff;
+    height: 50px;
+  }
+  .about-us-heading h1 {
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .about-us-student {
+    width: 100%;
+    min-height: 150px;
+    margin-top: 25px;
+  }
+  .about-us-student h1 {
+    font-size: 1.5rem;
+  }
+  .about-us-student h2 {
+    font-size: 1rem;
+  }
+  .about-us-description {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+  .contact-us-heading {
+    border-bottom: 1px solid #fff;
+    height: 50px;
+  }
+  .contact-us-heading h1 {
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}

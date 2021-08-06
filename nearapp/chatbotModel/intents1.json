@@ -1,0 +1,89 @@
+{
+   "intents":[
+      {
+         "tag":"greeting",
+         "patterns":[
+            "Hi",
+            "Hey",
+            "How are you",
+            "Is anyone there?",
+            "Hello"
+         ],
+         "responses":[
+            "Hey",
+            "Hello",
+            "Hi there",
+            "Hi there, how can I help?"
+         ]
+      },
+      {
+         "tag":"goodbye",
+         "patterns":[
+            "Bye",
+            "See you later",
+            "Goodbye"
+         ],
+         "responses":[
+            "See you later",
+            "Have a nice day",
+            "Bye! Catch you later"
+         ]
+      },
+      {
+         "tag":"thanks",
+         "patterns":[
+            "Thanks",
+            "Thank you",
+            "That's helpful",
+            "Thank's a lot!"
+         ],
+         "responses":[
+            "Happy to help!",
+            "My pleasure"
+         ]
+      },
+      {
+         "tag":"add places",
+         "patterns":[
+            "Can we add our own places"
+            
+         ],
+         "responses":[
+            "Yes, we do have suggestions page. You can write your suggestions and let us know about nearby places."
+            
+         ]
+      },
+      {
+         "tag":"contact",
+         "patterns":[
+            "How can we contact you?"
+            
+         ],
+         "responses":[
+            "You can either write us a suggestion/feedback or you can mail us at <a href='helpdesk@studentcompanion.com.'>helpdesk@studentcompanion.com.</a>"
+            
+         ]
+      },
+      {
+         "tag":"godwork",
+         "patterns":[
+            "Can we book services from student companion?"
+            
+         ],
+         "responses":[
+            "We are extremely sorry but this feature is currently not available. We might add this in future update. Stay Tuned."
+         ]
+      },
+      {
+         "tag":"meet",
+         "patterns":[
+            ". Can we get directions to any place on student companion?"
+            
+         ],
+         "responses":[
+            "Yes, you just need to click on directions and you will be redirected to google maps"
+         ]
+      }
+      
+   ]
+}

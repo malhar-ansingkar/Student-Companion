@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet" />
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="filter-style.css" /> -->
+  scr
+  <style>
+    button {
+      outline: none;
+    }
+
+    body {
+      background-color: #272d33;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* navbar-1 start */
+    .b-navbar-container {
+      background-color: #272d33;
+      position: sticky;
+      top: 0px;
+      width: 100%;
+
+      align-self: center;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #navbar-expand-lg-1 {
+      background: #edeff1;
+    }
+
+    a {
+      color: black;
+    }
+
+    #navbar-nav-1 {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    #m-navbar-1-item {
+      height: 50%;
+      padding: auto 15px auto 15px;
+      text-align: center;
+      width: auto;
+      font-weight: bold;
+      margin: 5px 30px;
+      color: #2b2b2b;
+      font-family: "Verdana";
+      border: 2px solid #272d33;
+      border-radius: 60px;
+    }
+
+    #m-navbar-1-main {
+      font-family: "Domine", serif;
+      color: #272d33;
+      font-weight: bold;
+    }
+
+    /* navbar-1 end */
+
+    /* navbar-2 start */
+
+    #navbar-expand-lg-2 {
+      background-color: #272d33;
+    }
+
+    #navbar-nav-2 {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #m-navbar-2-item {
+      color: white;
+      font-weight: bold;
+    }
+
+    .new-navbar-2 {
+      color: white;
+      font-size: larger;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .navbar-toggler-icon {
+      padding-top: 5px;
+    }
+
+    .fa-chevron-circle-down {
+      color: #272d33;
+      font-size: larger;
+    }
+
+    /* navbar-2 end */
+    /* footer start */
+    .b-footer {
+      width: 100%;
+      margin-top: 50px;
+      background-color: #272d33;
+      padding: 10px 50px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .inner-footer-1 {
+      background-color: #fff;
+      margin-top: 4%;
+      border-radius: 50px;
+      padding: 30px 40px;
+    }
+
+    .inner-footer-1 h2 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .inner-footer-1 p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .inner-footer-2 {
+      margin-top: 4%;
+      padding: 20px 0px;
+    }
+
+    .inner-footer-2 div button {
+      background: transparent;
+      border: 0px;
+      color: #fff;
+      font-size: 1.3rem;
+      text-decoration: underline;
+      margin-right: 20px;
+    }
+
+    #m-navbar-1-item {
+      background-color: #272d33;
+      color: #fff;
+    }
+
+    #m-footer-1-button {
+      background-color: #272d33;
+      color: #fff;
+      border-radius: 100px;
+      padding: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .inner-footer-2 h2 {
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .inner-footer-2 p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .inner-footer-2 .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .copyright-paragraph {
+      margin-top: 10px;
+      color: #fff;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    .mycolor {
+      background-color: #272d33;
+      background-color: #272d33;
+      color: #fff;
+      font-weight: bold;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .inner-footer-1 {
+        font-size: 1rem;
+      }
+
+      .inner-footer-1 h2 {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .inner-footer-1 p {
+        font-size: 1rem;
+      }
+
+      .inner-footer-2 h2 {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .inner-footer-2 p {
+        font-size: 1rem;
+      }
+
+      .inner-footer-2 div button {
+        font-size: 1rem;
+      }
+
+      .copyright-paragraph {
+        font-size: 5px;
+      }
+    }
+
+    /* footer end*/
+
+    /*///////////// main content/////////////*/
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      padding: 50px 0px;
+      width: 90%;
+      justify-self: center;
+      background-color: #272d33;
+      flex-wrap: wrap;
+    }
+
+    .card-main {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      background-color: #272d33;
+    }
+
+    .card-main-search {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+    }
+
+    .search-input-area {
+      width: 70%;
+      padding-left: 10px;
+      background-color: white;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      height: 50%;
+      border: none;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .search-input-button {
+      width: 10%;
+      height: 50%;
+      color: #2b2b2b;
+      border: none;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      background-color: white;
+      outline: none;
+    }
+
+    .search-input-button:hover {
+      background-color: #272d33;
+      color: #fff;
+      outline: none;
+    }
+
+    .card-main-inner {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card-main-inner-card {
+      width: 300px;
+      margin: 50px;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .card-image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card-text-section {
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      height: 100%;
+      border-color: #edeff1;
+    }
+
+    .name_dist_rate {
+      padding: 10px 15px;
+      border-bottom: solid 3px rgb(185, 185, 185);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .name_dist_rate_title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .dist_rate {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: larger;
+      color: #fff;
+    }
+
+    .dist {
+      color: #272d33;
+    }
+
+    .rating {
+      background-color: green;
+      padding: 10px;
+    }
+
+    .address {
+      margin-top: 5px;
+      font-size: larger;
+      padding: 0px 10px;
+      color: #272d33;
+      font-size: 1.2rem;
+    }
+
+    .time {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      padding: 0px 10px;
+      font-weight: bold;
+    }
+
+    .contact_dir_amt {
+      border-top: 2px solid gray;
+      margin-top: 20px;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      outline: none;
+    }
+
+    .contact,
+    .dir {
+      width: 50%;
+      border: none;
+      background-color: #fff;
+      color: #272d33;
+      font-size: 1rem;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .dir {
+      border-left: 2px solid gray;
+      outline: none;
+    }
+
+    .filter-main {
+      width: 25%;
+      position: sticky;
+      top: 200px;
+      height: 450px;
+      z-index: 100000;
+    }
+
+    #navbar-expand-lg-3 {
+      max-width: 350px;
+      background-color: #fff;
+      border-radius: 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #272d33;
+      font-weight: bolder;
+    }
+
+    #navbar-nav-3 {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    #m-navbar-3-item {
+      color: #272d33;
+      font-weight: bold;
+    }
+
+    .new-navbar-3 {
+      color: #272d33;
+      font-size: larger;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .navbar-toggler-icon {
+      padding-top: 5px;
+    }
+
+    .fa-chevron-circle-down {
+      color: #272d33;
+      font-size: larger;
+    }
+
+    .btn-group {
+      width: 200px;
+      border-radius: 20px;
+    }
+
+    .btn {
+      background-color: #272d33;
+      color: #fff;
+      font-weight: bold;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .card-main {
+        width: 100%;
+        display: flex;
+        background-color: #272d33;
+      }
+
+      .card-main-inner-card {
+        width: 300px;
+        margin: 20px;
+        border-radius: 50px;
+        overflow: hidden;
+      }
+
+      .filter-main {
+        width: 100%;
+        position: sticky;
+        top: 120px;
+        height: auto;
+        z-index: 100;
+      }
+
+      #navbar-expand-lg-3 {
+        background-color: white;
+        border-radius: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #272d33;
+        font-weight: bolder;
+      }
+
+      #navbar-nav-3 {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #m-navbar-3-item {
+        width: 80%;
+        color: #272d33;
+        font-weight: bold;
+      }
+
+      .new-navbar-3 {
+        font-size: larger;
+        justify-self: center;
+        align-self: center;
+      }
+
+      .navbar-toggler-icon {
+        padding-top: 5px;
+      }
+
+      .fa-chevron-circle-down {
+        font-size: larger;
+      }
+
+      .btn-group {
+        width: 200px;
+        border-radius: 20px;
+      }
+
+      .btn {
+        color: #fff;
+        font-weight: bold;
+        justify-content: center;
+      }
+
+      .btn:active {
+        color: azure;
+      }
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="b-navbar-container">
+    <!--navbar-1-start-->
+    <nav id="navbar-expand-lg-1" class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-chevron-circle-down"></span>
+      </button>
+      <a id="m-navbar-1-main" class="navbar-brand" href="/">
+        STUDENT COMPANION.</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div id="navbar-nav-1" class="navbar-nav">
+          <a id="m-navbar-1-item" class="nav-item nav-link" href="#">
+            {{college.name}} <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </a>
+          <a id="m-navbar-1-item" class="nav-item nav-link" href="/suggestions">Have a suggestion ? &ensp;<i
+              class="fa fa-paper-plane" aria-hidden="true"></i></a>
+          
+        </div>
+      </div>
+    </nav>
+    <!--navbar-1-end-->
+    <!--navbar-2-start-->
+    <nav id="navbar-expand-lg-2" class="navbar navbar-expand-lg">
+      <a id="m-navbar-2-item" class="navbar-brand" href="#"> CATEGORIES</a>
+      <button class="navbar-toggler new-navbar-2" type="button" data-toggle="collapse"
+        data-target="#navbarNavAltMarkup-2" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup-2">
+        <div id="navbar-nav-2" class="navbar-nav">
+          <a id="m-navbar-2-item" class="nav-item nav-link active" href="/{{college.id}}/gym">GYMS </a>
+          <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/Restaurant">RESTRAURANTSHOSTEL/PG'S</a>
+          <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/hostel">HOSTEL/PG'S</a>
+          <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/medicalFacility">MEDICAL STORES</a>
+          <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/bookStore">BOOK STORES</a>
+          <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/Event">
+            EVENTS</a>
+        </div>
+      </div>
+    </nav>
+    <!--navbar-2-end-->
+  </div>
+  <!--edit area start-->
+  <div class="main-content">
+    <div class="filter-main">
+      <nav id="navbar-expand-lg-3" class="navbar navbar-expand-lg">
+        <h3>Sort by</h3>
+        <button class="navbar-toggler new-navbar-3" type="button" data-toggle="collapse"
+          data-target="#navbarNavAltMarkup-3" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup-3">
+          <div id="navbar-nav-3" class="navbar-nav">
+            <label> </label>
+            <div id="m-navbar-3-item" class="nav-item nav-link " href="#">
+              <div class="btn-group">
+
+
+                <select id="pricefilter" class="form-select form-select-sm w-100 mycolor filterchange"
+                  aria-label=".form-select-sm example">
+                  <option value="AveragePrice" selected>Price:Low To High</option>
+                  <option value="-AveragePrice">Price:High to Low</option>
+
+                </select>
+              </div>
+            </div>
+            <div id="m-navbar-3-item" class="nav-item nav-link" href="#">
+              <div class="btn-group">
+                <select id="ratingFilter" class="form-select form-select-sm w-100 mycolor filterchange"
+                  aria-label=".form-select-sm example">
+                  <!-- <option value="rating" selected>Rating</option> -->
+                  <option value="rating" selected>Rating:Low To High</option>
+                  <option value="-rating">Rating:High to Low</option>
+
+                </select>
+              </div>
+            </div>
+            <div id="m-navbar-3-item" class="nav-item nav-link " href="#">
+
+              <div class="btn-group">
+{% csrf_token %}
+                <select id="distanceFilter" class="form-select form-select-sm w-100 mycolor filterchange"
+                  aria-label=".form-select-sm example">
+                  <!-- <option value="distance" selected>Distance from collge</option> -->
+                  <option value="distance" selected>Distance:Low To High</option>
+                  <option value="-distance">Distance:High to Low</option>
+
+                </select>
+              </div>
+            </div>
+            <!-- <div>
+              <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+              <label for="toggle-on" class="btn">Yes</label>
+              <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+              <label for="toggle-off" class="btn">No</label>
+
+            </div> -->
+
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="card-main">
+      <div class="card-main-search">
+        <input class="search-input-area" type="text" placeholder="Search.." name="search">
+        <button class="search-input-button" type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="card-main-inner">
+        {% for shop in shops %}
+        <div class="card-main-inner-card">
+          <img src="{{ shop.image.url }}" alt="card-show-image" class="card-image" />
+
+          <div href="/{{shop.college.id}}/{{ shop.type}}" class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">{{shop}}</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;{{ shop.distance }}km
+                  </span>
+                  <span class="rating">{{ shop.rating }}&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                {{ shop.description|slice:":75" }}...
+
+              </div>
+              <div class="time">{{ shop.time }}</div>
+
+              <div class="contact_dir_amt">
+                <!-- /{{shop.college.id}}/{{ shop.type}} -->
+                <button class="contact">
+                  <a target="blank" href="/shop/{{  shop.id  }}">Details</a>
+                </button>
+                <button class="dir">
+                  <a target="blank" href="{{  shop.Direction  }}">DIRECTION</a>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- <div class="card-main-inner-card">
+          <img src="index.jpg" alt="card-show-image" class="card-image" />
+
+          <div class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">Han Man Fitnees Gym</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;1.2km
+                  </span>
+                  <span class="rating">4.5&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                Address nbjc ncjkbckk nln cklnv kknkkc vsdkghhdfkgjj n
+                srt,gjgnreos eofdst,fvowermrg,mc eeitmdflm
+                rketmdfvsdft
+              </div>
+              <div class="time">Timings: 7:00-22:00</div>
+              <div class="contact_dir_amt">
+                <button class="contact">
+                  <a target="blank" href="/shop/{{  shop.id  }}">Contact Us</a>
+                </button>
+                <button class="dir">
+                  <a target="blank" href="{{  shop.Direction  }}">DIRECTION</a>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-main-inner-card">
+          <img src="index.jpg" alt="card-show-image" class="card-image" />
+
+          <div class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">Han Man Fitnees Gym</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;1.2km
+                  </span>
+                  <span class="rating">4.5&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                Address nbjc ncjkbckk nln cklnv kknkkc vsdkghhdfkgjj n
+                srt,gjgnreos eofdst,fvowermrg,mc eeitmdflm
+                rketmdfvsdft
+              </div>
+              <div class="time">Timings: 7:00-22:00</div>
+              <div class="contact_dir_amt">
+                <button class="contact">CONTACT US</button>
+                <button class="dir">DIRECTION</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-main-inner-card">
+          <img src="index.jpg" alt="card-show-image" class="card-image" />
+
+          <div class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">Han Man Fitnees Gym</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;1.2km
+                  </span>
+                  <span class="rating">4.5&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                Address nbjc ncjkbckk nln cklnv kknkkc vsdkghhdfkgjj n
+                srt,gjgnreos eofdst,fvowermrg,mc eeitmdflm
+                rketmdfvsdft
+              </div>
+              <div class="time">Timings: 7:00-22:00</div>
+              <div class="contact_dir_amt">
+                <button class="contact">CONTACT US</button>
+                <button class="dir">DIRECTION</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-main-inner-card">
+          <img src="index.jpg" alt="card-show-image" class="card-image" />
+
+          <div class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">Han Man Fitnees Gym</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;1.2km
+                  </span>
+                  <span class="rating">4.5&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                Address nbjc ncjkbckk nln cklnv kknkkc vsdkghhdfkgjj n
+                srt,gjgnreos eofdst,fvowermrg,mc eeitmdflm
+                rketmdfvsdft
+              </div>
+              <div class="time">Timings: 7:00-22:00</div>
+              <div class="contact_dir_amt">
+                <button class="contact">details</button>
+                <button class="dir">DIRECTION</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-main-inner-card">
+          <img src="index.jpg" alt="card-show-image" class="card-image" />
+
+          <div class="card-text-section">
+            <div class="name-and-description">
+
+              <div class="name_dist_rate">
+                <h4 class="name_dist_rate_title">Han Man Fitnees Gym</h4>
+                <div class="dist_rate">
+                  <span class="dist"><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;1.2km
+                  </span>
+                  <span class="rating">4.5&ensp;<i class="fa fa-star" aria-hidden="true"></i></span>
+                </div>
+
+              </div>
+              <div class="address">
+                Address nbjc ncjkbckk nln cklnv kknkkc vsdkghhdfkgjj n
+                srt,gjgnreos eofdst,fvowermrg,mc eeitmdflm
+                rketmdfvsdft
+              </div>
+              <div class="time">Timings: 7:00-22:00</div>
+              <div class="contact_dir_amt">
+                <button class="contact">CONTACT US</button>
+                <button class="dir">DIRECTION</button>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!--edit area end-->
+
+    <!--footer start-->
+    <div class="b-footer">
+      <div class="col-sm-6">
+        <div class="inner-footer-1">
+          <h2>Have a suggestion?</h2>
+          <p>
+            Are you a senior of a college? or do you know something about this
+            college? Help us out with your information to make our website
+            better.
+          </p>
+          <div class="button" id="m-footer-1-button"><a href="/suggestions">Let us Know</a></div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="inner-footer-2 display-flex-center">
+          <h2>STUDENT COMPANION.</h2>
+          <p>
+            STUDENT COMPANION is a one stop for all the needs of a freshie.
+            He/she can get to know about all their necessary places nearby their
+            college. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem.
+          </p>
+          <div class="button-container">
+            <button>About Us</button>
+            <button>Contact Us</button>
+          </div>
+          <p class="copyright-paragraph">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!--footer end
+        <script src="new-filter.js" ></script>
+-->
+</body>
+<script>
+  console.log("fcdvdvddsvsvd");
+
+
+  // fetch("sample-data.JSON")
+  //   .then(response => response.json())
+  //   .then(data =>
+  //     console.log(data.category))
+
+
+  const cardDataFeeder = (data,data2) =>
+    `
+<div class="card-main-inner-card">
+<img
+src="/media/${data["image"]}"
+alt="card-show-image"
+class="card-image"
+/>
+
+<div class="card-text-section">
+    <div class="name-and-description">
+        
+          <div class="name_dist_rate">
+            <h4 class="name_dist_rate_title">${data["ShopName"]}</h4>
+            <div class="dist_rate">
+              <span class="dist"
+                ><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;${data["distance"]}km
+              </span>
+              <span class="rating"
+                >${data["rating"]}&ensp;<i class="fa fa-star" aria-hidden="true"></i
+              ></span>
+            </div>
+          
+            </div>
+        <div class="address">
+        ${data["description"].substring(0, 75)}...
+        </div>
+        <div class="time">${data["time"]}</div>
+        
+        <div class="contact_dir_amt">
+          <button class="contact">
+                  <a target="blank" href="/shop/${data2}">Details</a>
+                </button>
+        <button class="dir">
+          <a target="blank" href="${data["Direction"]}">DIRECTION</a>
+        </button>
+              
+        </div>
+    
+</div>
+</div>
+</div>
+`;
+
+  // for (let i = 0; i < data.length; i++) {
+  //   allHTML += cardDataFeeder(data[i]);
+  // }
+
+</script>
+
+<script>
+  // var lst = [data];
+  con
+  function distributeDetails(data) {
+    
+    data = JSON.parse(data['Data']);
+    // data = data['Data']
+  
+
+    // console.log(data);
+    allHTML = ""
+    for (let i = 0; i < data.length; i++) {
+      console.log(data[i]);
+      allHTML += cardDataFeeder(data[i]["fields"],data[i]['pk']);
+    }
+    $(".card-main-inner").html(allHTML);
+    
+
+  }
+  function getData() {
+    collgepk = "{{ college.pk }}";
+    
+    type = "{{ type }}";
+    distance = $('#distanceFilter').val();
+    price = $('#pricefilter').val();
+    rating = $('#ratingFilter').val();
+    data = { 'college': collgepk , 'distance': distance, 'price': price, 'rating': rating,'type': type};
+    // console.log(data)
+    var token = '{{csrf_token}}';
+
+    $.ajax({
+      url: '/filter',
+      type: 'POST',
+      headers: {
+        'X-CSRFToken': token,
+      },
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify(data),
+      dataType: 'text',
+      success: function (result) {
+
+        distributeDetails(JSON.parse(result));
+
+      }
+    });
+
+    // data = {'distance':distance,'price':price,'rating':rating};
+    // $.ajax({
+    //   type: "POST",
+    //   url: url,
+    //   data: data,
+    //   success: distributeDetails(data),
+    //   dataType: dataType
+    // });
+
+  }
+  $(".filterchange").change(function () {
+    console.log("filter change")
+    getData();
+  });
+
+  
+{% for college in colleges %}
+  lst.push({ label: "{{college}}", the_link: "/{{college.id}}"})
+{% endfor %}
+// console.log("{{ colleges }}")
+ 
+
+</script>
+
+</html>

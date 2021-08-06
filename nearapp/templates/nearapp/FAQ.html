@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui/build/botui-theme-default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #272d33;
+      }
+      /* navbar-1 start */
+      .b-navbar-container {
+        background-color: #272d33;
+        position: sticky;
+        top: 0px;
+        z-index: 100000;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      #navbar-expand-lg-1 {
+        background: #edeff1;
+      }
+      #navbar-nav-1 {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+      #m-navbar-1-item {
+        height: 50%;
+        padding: auto 15px auto 15px;
+        text-align: center;
+        width: auto;
+        font-weight: bold;
+        margin: 5px 30px;
+        color: #2b2b2b;
+        font-family: "Verdana";
+        border: 2px solid #272d33;
+        border-radius: 60px;
+        font-size: 0.7rem;
+      }
+      #m-navbar-1-main {
+        font-family: "Domine", serif;
+        color: #272d33;
+        font-weight: bold;
+      }
+
+      /* navbar-1 end */
+
+      /* navbar-1 end */
+      /* footer start */
+      .main-footer {
+        width: 100%;
+        background-color: #272d33;
+      }
+      .b-footer {
+        width: 100%;
+        background-color: #272d33;
+        padding: 30px 12%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .inner-footer-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #fff;
+        margin-top: 4%;
+        border-radius: 50px;
+        padding: 30px 40px;
+      }
+      .inner-footer-1 h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .inner-footer-1 p {
+        margin-top: 20px;
+        font-size: 1rem;
+      }
+      .inner-footer-2 {
+        margin-top: 4%;
+        padding: 20px 0px;
+      }
+
+      .inner-footer-2 div button {
+        background: transparent;
+        border: 0px;
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-right: 20px;
+      }
+
+      #m-navbar-1-item {
+        background-color: #272d33;
+        color: #fff;
+      }
+
+      #m-footer-1-button {
+        background-color: #272d33;
+        color: #fff;
+        border-radius: 100px;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 30px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .inner-footer-2 h2 {
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .inner-footer-2 p {
+        font-size: 1rem;
+        margin-top: 10px;
+        color: #fff;
+      }
+
+      .inner-footer-2 .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+      }
+
+      .copyright-paragraph {
+        margin-top: 10px;
+        color: #fff;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .b-footer {
+          padding: 0px;
+        }
+        .b-footer .col-sm-6 {
+          width: 100%;
+        }
+        .inner-footer-1 {
+          font-size: 1rem;
+        }
+        .inner-footer-1 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-1 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-2 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 div button {
+          font-size: 1rem;
+        }
+        .copyright-paragraph {
+          font-size: 5px;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      /* footer end*/
+
+      /*/////////////main styling//////////////*/
+      body {
+        background-color: #272d33;
+      }
+
+      .faq-main-title {
+        margin: 20px auto 80px;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 3px;
+        color: #fff;
+      }
+
+      details {
+        width: 75%;
+        min-height: 5px;
+        padding: 25px 40px 25px 25px;
+        margin: 0 auto;
+        position: relative;
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        background-color: white;
+      }
+
+      details + details {
+        margin-top: 20px;
+      }
+
+      details[open] {
+        min-height: 50px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      details p {
+        margin-top: 20px;
+        color: #000;
+        font-weight: 400;
+      }
+
+      summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      summary:focus {
+        outline: none;
+      }
+
+      summary:focus::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .control-icon {
+        fill: #272d33;
+        transition: 0.3s ease;
+        pointer-events: none;
+      }
+
+      .control-icon-close {
+        display: none;
+      }
+
+      details[open] .control-icon-close {
+        display: initial;
+        transition: 0.3s ease;
+      }
+
+      details[open] .control-icon-expand {
+        display: none;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .faq-main-title {
+          margin: 20px auto 40px auto;
+          font-size: 1.4rem;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #fff;
+        }
+        details {
+          width: 90%;
+          padding: 20px;
+          font-size: 22px;
+          border-radius: 15px;
+          box-sizing: border-box;
+          transition: all 1s;
+          background-color: white;
+        }
+        summary {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        details p {
+          margin-top: 20px;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* bot */
+      #chat-bot-main {
+        opacity: 0;
+        position: fixed;
+        z-index: 9000000;
+        top: 50px;
+        overflow: hidden;
+        right: 30px;
+        border-radius: 20px;
+        max-width: 400px;
+        border: 2px solid gray;
+      }
+
+      #chat-bot-main.active {
+        opacity: 1;
+      }
+
+      .chatbox-toggle {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 60px;
+        border-top-right-radius: 0px;
+        z-index: 90000;
+        background-color: #fff;
+        color: #272d33;
+        border-color: rgb(114, 114, 114);
+      }
+      .chatbox-toggle i {
+        font-size: 1.7rem;
+      }
+      .botui-container {
+        background-color: #edeff1;
+      }
+
+      .botui-message-content {
+        background-color: #fff;
+      }
+
+      .botui-message-content.human {
+        background-color: #272d33;
+      }
+      .botui-actions-buttons-button {
+        background-color: #272d33;
+      }
+
+      @media only screen and (max-width: 768px) {
+        #chat-bot-main {
+          right: 10px;
+          border-radius: 20px;
+          max-width: 300px;
+          height: 60vh;
+        }
+        .chatbox-toggle {
+          right: 10px;
+        }
+      }
+
+      /* bot */
+    </style>
+  </head>
+  <body>
+    <div class="botui-app-container" id="chat-bot-main">
+      <bot-ui> </bot-ui>
+    </div>
+
+    <button class="chatbox-toggle">
+      <i class="fa fa-users" aria-hidden="true"></i>
+    </button>
+
+    <div class="b-navbar-container">
+      <!--navbar-1-start-->
+      <nav id="navbar-expand-lg-1" class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fa fa-chevron-circle-down"></span>
+        </button>
+        <a id="m-navbar-1-main" class="navbar-brand" href="/">
+          STUDENT COMPANION.</a
+        >
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div id="navbar-nav-1" class="navbar-nav">
+            <a
+              id="m-navbar-1-item"
+              class="nav-item nav-link"
+              href="/suggestions"
+              >Have a suggestion ? &ensp;<i
+                class="fa fa-paper-plane"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <!--navbar-1-end-->
+    </div>
+
+    <!--edit area start-->
+    <h4 class="faq-main-title">Frequently Asked Questions</h4>
+
+    <div
+      style="visibility: hidden; position: absolute; width: 0px; height: 0px"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol viewBox="0 0 24 24" id="expand-more">
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="close">
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </symbol>
+      </svg>
+    </div>
+
+    <details>
+      <summary>
+        Does this product have what I need?
+        <svg
+          class="control-icon control-icon-expand"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#expand-more"
+          />
+        </svg>
+        <svg
+          class="control-icon control-icon-close"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+        </svg>
+      </summary>
+      <p>
+        Totally. Totabs vudvbd jSvsdvsd vdd dvvvsdvsdvd v dvsVDVdVS vddvSdvs
+        dvsdv vdv v SD dv sv vd dvv dsvd d f ds f lly does. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Alias ducimus nobis eveniet
+        facilis obcaecati? Ullam, atque tempora? Quod nihil quos soluta dolores,
+        beatae voluptates eligendi voluptate modi nostrum minima dolor,
+        accusamus expedita aliquid reprehenderit. Dolorem impedit, nesciunt odit
+        atque, unde sapiente aliquam soluta, dicta quidem deleniti voluptas quam
+        nam expedita.
+      </p>
+    </details>
+    <details>
+      <summary>
+        Can I use it all the time?
+        <svg
+          class="control-icon control-icon-expand"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#expand-more"
+          />
+        </svg>
+        <svg
+          class="control-icon control-icon-close"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+        </svg>
+      </summary>
+      <p>Of course you can, we won't stop you.</p>
+    </details>
+    <details>
+      <summary>
+        Are there any restrictions?
+        <svg
+          class="control-icon control-icon-expand"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#expand-more"
+          />
+        </svg>
+        <svg
+          class="control-icon control-icon-close"
+          width="24"
+          height="24"
+          role="presentation"
+        >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+        </svg>
+      </summary>
+      <p>Only your imagination my friend. Go forth!</p>
+    </details>
+
+    <!--edit area end-->
+
+    <!--footer start-->
+    <div class="b-footer">
+      <div class="col-sm-6">
+        <div class="inner-footer-1">
+          <h2>Have a suggestion?</h2>
+          <p>
+            Are you a senior of a college? or do you know something about this
+            college? Help us out with your information to make our website
+            better.
+          </p>
+          <a id="m-footer-1-button" href="/suggestions">Let us Know</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="inner-footer-2 display-flex-center">
+          <h2>STUDENT COMPANION.</h2>
+          <p>
+            STUDENT COMPANION is a one stop for all the needs of a freshie.
+            He/she can get to know about all their necessary places nearby their
+            college. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem.
+          </p>
+          <div class="button-container">
+            <a href="/about">About Us</a>
+          </div>
+          <p class="copyright-paragraph">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+  </body>
+
+  <!-- chatbot -->
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+  <script>
+    var button = document.querySelector(".chatbox-toggle");
+    button.onclick = function () {
+      document.querySelector(".chatbox-toggle").classList.toggle("active");
+      document.querySelector("#chat-bot-main").classList.toggle("active");
+    };
+          var optionlst = [];
+          {% for college in colleges %}
+
+            optionlst.push({ text: "{{college}}", value: "{{college.id}}"});
+          {% endfor %}
+          function sendXHR(text,cb) {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+          var xhr = new XMLHttpRequest();
+          var self = this;
+          xhr.open('POST','/chatapi');
+
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+          xhr.send(JSON.stringify({ "message": text }));
+          var response = ""
+          xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    response = xhr.responseText;
+                    cb(response);
+                }
+            }
+
+          console.log(response);
+          return xhr.responseText
+
+
+        }
+
+        function sendXHRforShops(pk,type,cb) {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+          var xhr = new XMLHttpRequest();
+          var self = this;
+          xhr.open('POST','/filter');
+
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+          xhr.send(JSON.stringify({ 'college': pk , 'filters':"-rating",'type': type}));
+          var response = ""
+          xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    response = xhr.responseText;
+                    cb(response);
+                }
+            }
+
+          console.log(response);
+          return xhr.responseText
+
+
+        }
+
+          var botui = new BotUI("chat-bot-main");
+          var loadingMsgIndex;
+          var collegeid;
+          var shopType;
+
+
+
+          //#5 API call
+          //messege from bot
+          botui.message.add({
+            content: "Hello from bot!",
+          });
+          //messege from human
+          botui.message.add({
+            delay: 300,
+            loading: true,
+            human: true,
+            content: "Hello!!",
+          });
+          //messege from bot
+          function initCategory(){
+            botui.message
+                    .add({
+                      content: "Enter college ",
+                    })
+                    .then(function () {
+                      return botui.action.select({
+                              action: {
+                                  placeholder : "Select Language",
+                                  value: 'TR', // Selected value or selected object. Example: {value: "TR", text : "Türkçe" }
+                                  searchselect : true, // Default: true, false for standart dropdown
+                                  label : 'text', // dropdown label variable
+                                  options : optionlst,
+                                  button: {
+                                    icon: 'check',
+                                    label: 'OK'
+                                  }
+                                }
+                            }).then(function (res) { // will be called when a button is clicked.
+                              collegeid = res.value;
+                              // console.log(res.value); // will print "one" from 'value'
+                            });
+                    })
+                    .then(function () {
+                      return botui.action.button({
+                        action: [
+                          {
+                            text: "Gym",
+                            value: "gym",
+                          },
+                          {
+                            text: "Hostel/PG's",
+                            value: "hostel",
+                          },
+                          {
+                            text: "Restraurants",
+                            value: "Restaurant",
+                          },
+                          {
+                            text: "Medical Facilities",
+                            value: "medicalFacility",
+                          },
+                          {
+                            text: "Book Stores",
+                            value: "bookStore",
+                          },
+                          {
+                            text: "Events",
+                            value: "Event",
+                          },
+                        ],
+                      });
+                    })
+                    .then(function (res) {
+                      shopType = res.value;
+                      console.log(collegeid,shopType,returnShops);
+                      sendXHRforShops(collegeid,shopType,returnShops);
+                      // console.log(res.value);
+                    })
+
+          }
+          function initChat(){
+            botui.message
+
+                        .add({
+                          content: "Enter query ",
+                        })
+                        .then(function () {
+                          return botui.action.text({
+                            action: {
+                              placeholder: "Your query",
+                            },
+                          });
+                        })
+                        .then(function (res) {
+                          loadingMsgIndex = botui.message.bot({
+                          delay: 200,
+                          loading: true
+                        }).then(function (index) {
+                          loadingMsgIndex = index;
+                          sendXHR(res.value, returnMessage)
+                        });
+                        })
+
+
+                }
+
+
+          function init() {
+            botui.message
+              .bot({
+                delay: 300,
+                content: "What would you like to do?",
+              })
+              .then(function () {
+                return botui.action.button({
+                  delay: 200,
+                  action: [
+                    {
+                      text: "Categories",
+                      value: "Categories",
+                    },
+                    {
+                      text: "Chat Bot",
+                      value: "Chat-Bot",
+                    },
+                  ],
+                });
+              })
+              .then(function (res) {
+                if (res.value == "Categories") {
+                  initCategory();
+                } else {
+                 initChat();
+                };
+          })
+    }
+          function returnMessage(stars) {
+            stars = JSON.parse(stars);
+            console.log(stars);
+          botui.message
+          .update(loadingMsgIndex, {
+             type: 'html',
+            content: '' + (stars['message'] || "0") + '.'
+          })
+          .then(initChat); // ask again for repo. Keep in loop.
+        }
+
+        function returnShops(shops) {
+            stars = JSON.parse(shops);
+            console.log(stars);
+            var parrsedData = JSON.parse(stars["Data"])
+            for (i = 0; i < parrsedData.length; i++) {
+              // console.log(parrsedData[i]);
+              name = parrsedData[i]["fields"]["ShopName"]
+              id = parrsedData[i]["pk"]
+            botui.message.add({
+              type: 'html',
+              // 'Go ahead, try [our product](https://example.com)'
+              // content:`'[${name}](http://127.0.0.1:8000/shop/${id})'`
+            content: `<a href="/shop/${id}">${name}  </a>`
+
+          });
+          }
+          // botui.message
+          // .update(loadingMsgIndex, {
+          //   content: '' + (stars['message'] || "0") + '.'
+          // })
+          // .then(initChat); // ask again for repo. Keep in loop.
+        }
+          init();
+  </script>
+
+  <!-- chatbot -->
+</html>

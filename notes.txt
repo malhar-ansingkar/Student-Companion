@@ -1,0 +1,7 @@
+4. Filters page background should be grey.
+12. Search bar not working.
+14. Information page par price not showing properly.
+18. Search functionality not working.
+
+
+

@@ -1,0 +1,185 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "How are you", "Is anyone there?", "Hello"],
+      "responses": ["Hey", "Hello", "Hi there", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "near by Mithibai College MC",
+      "patterns": ["bookStore near Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/5' >Vijay Book Centre (0.3KM)</a> <a href='/shop/1' >Han Man (1.5KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mithibai College MC",
+      "patterns": ["Best bookStore Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/1' >Han Man (4.1 Star)</a> <a href='/shop/5' >Vijay Book Centre (3.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by MMK Bandra MB",
+      "patterns": ["bookStore near MMK Bandra MB"],
+      "responses": ["<a href='/shop/4' >The Osho Book Shop (0.3KM)</a>"]
+    },
+    {
+      "tag": "best MMK Bandra MB",
+      "patterns": ["Best bookStore MMK Bandra MB"],
+      "responses": ["<a href='/shop/4' >The Osho Book Shop (3.0 Star)</a>"]
+    },
+    {
+      "tag": "near by Mithibai College MC",
+      "patterns": ["bookStore near Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/5' >Vijay Book Centre (0.3KM)</a> <a href='/shop/1' >Han Man (1.5KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mithibai College MC",
+      "patterns": ["Best bookStore Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/1' >Han Man (4.1 Star)</a> <a href='/shop/5' >Vijay Book Centre (3.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mithibai College MC",
+      "patterns": ["hostel near Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/6' >SVKM'S Shri G.R. Jani Hostel (0.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mithibai College MC",
+      "patterns": ["Best hostel Mithibai College MC"],
+      "responses": [
+        "<a href='/shop/6' >SVKM'S Shri G.R. Jani Hostel (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "hostel near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": ["<a href='/shop/7' >Wish Safe Student Housing (0.7KM)</a>"]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best hostel Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/7' >Wish Safe Student Housing (4.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    },
+    {
+      "tag": "near by Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "gym near Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (1.0KM)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (1.2KM)</a> <a href='/shop/3' >Befit (3.8KM)</a> <a href='/shop/9' >2 (4.0KM)</a>"
+      ]
+    },
+    {
+      "tag": "best Mukesh Patel School of Technology Management & Engineering MPSOTM&E",
+      "patterns": [
+        "Best gym Mukesh Patel School of Technology Management & Engineering MPSOTM&E"
+      ],
+      "responses": [
+        "<a href='/shop/8' >1 (5.0 Star)</a> <a href='/shop/2' >Anytime Fitness Vile Parle West (4.1 Star)</a> <a href='/shop/10' >3 (3.0 Star)</a> <a href='/shop/9' >2 (2.0 Star)</a>"
+      ]
+    }
+  ]
+}

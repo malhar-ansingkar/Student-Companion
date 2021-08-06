@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui/build/botui-theme-default.css"
+    />
+
+    <title>Document</title>
+    <style>
+      button {
+        outline: none;
+      }
+
+      body {
+        background-color: #edeff1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      /* navbar-1 start */
+      .b-navbar-container {
+        background-color: #272d33;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        align-self: center;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+      }
+      #navbar-expand-lg-1 {
+        background: #edeff1;
+      }
+      #navbar-nav-1 {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      #m-navbar-1-item {
+        height: 50%;
+        padding: auto 15px auto 15px;
+        text-align: center;
+        width: auto;
+        font-weight: bold;
+        margin: 5px 30px;
+        color: #2b2b2b;
+        font-family: "Verdana";
+        border: 2px solid #272d33;
+        border-radius: 60px;
+      }
+      #m-navbar-1-main {
+        font-family: "Domine", serif;
+        color: #272d33;
+        font-weight: bold;
+      }
+
+      /* navbar-1 end */
+
+      /* navbar-2 start */
+      label > input {
+        display: none;
+      }
+
+      #navbar-expand-lg-2 {
+        background-color: #272d33;
+      }
+
+      #navbar-nav-2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      #m-navbar-2-item {
+        color: white;
+        font-weight: bold;
+      }
+
+      .new-navbar-2 {
+        color: white;
+        font-size: larger;
+        justify-self: center;
+        align-self: center;
+      }
+      .navbar-toggler-icon {
+        padding-top: 5px;
+      }
+      .fa-chevron-circle-down {
+        color: #272d33;
+        font-size: larger;
+      }
+
+      /* navbar-2 end */
+      /* footer start */
+      .b-footer {
+        width: 100%;
+        margin-top: 50px;
+        background-color: #272d33;
+        padding: 30px 12%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .inner-footer-1 {
+        background-color: #fff;
+        margin-top: 4%;
+        border-radius: 50px;
+        padding: 30px 40px;
+      }
+      .inner-footer-1 h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .inner-footer-1 p {
+        margin-top: 20px;
+        font-size: 1rem;
+      }
+
+      .inner-footer-2 div button {
+        background: transparent;
+        border: 0px;
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-right: 20px;
+      }
+      #m-navbar-1-item {
+        background-color: #272d33;
+        color: #fff;
+      }
+      #m-footer-1-button {
+        background-color: #272d33;
+        color: #fff;
+        border-radius: 100px;
+        padding: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .inner-footer-2 h2 {
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .inner-footer-2 {
+        padding: 30px;
+      }
+      .inner-footer-2 p {
+        font-size: 1rem;
+        margin-top: 10px;
+        color: #fff;
+        text-align: center;
+      }
+      .inner-footer-2 .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+      }
+      .copyright-paragraph {
+        margin-top: 10px;
+        color: #fff;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+      @media only screen and (max-width: 768px) {
+        .b-footer {
+          padding: 0px;
+        }
+        .b-footer .col-sm-6 {
+          width: 100%;
+        }
+        .inner-footer-1 {
+          font-size: 1rem;
+        }
+        .inner-footer-1 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-1 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-2 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 div button {
+          font-size: 1rem;
+        }
+        .copyright-paragraph {
+          font-size: 5px;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      /* footer end*/
+
+      .have-a-suggestion {
+        width: 50%;
+        height: 100%;
+        background: #eceff1;
+        border-radius: 50px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        display: block;
+        margin-top: 50px;
+        padding: 30px;
+        color: #272d33;
+      }
+
+      .have-a-suggestion h1 {
+        text-align: center;
+        margin-top: 5px;
+        color: #272d33;
+      }
+      .have-a-suggestion p{
+        text-align: center;
+        margin-top: 5px;
+        color: #272d33;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      form input,
+      textarea {
+        border-radius: 2px;
+        width: 90%;
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+        border: 1px solid #eceff1;
+        padding: 15px;
+        z-index: 1;
+        position: relative;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+      }
+
+      [type="submit"] {
+        color: #fff;
+        padding: 10px;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        background-color: #272d33;
+        margin: 22px 10%;
+        font-weight: 500;
+        width: 80%;
+      }
+
+      [type="submit"]:hover {
+        border-color: #c6c6c6;
+        color: #fff;
+        cursor: pointer;
+        -o-transition: all 0.2s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        background-color: #3e4750;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .have-a-suggestion {
+          left: 3%;
+          margin-right: 3%;
+          width: 88%;
+          margin-left: 3%;
+          padding-left: 3%;
+          padding-right: 3%;
+          font-size: 1rem;
+        }
+        .have-a-suggestion h1 {
+          text-align: center;
+          margin-top: 5px;
+          color: #272d33;
+          font-size: 2rem;
+        }
+      }
+
+      /* bot */
+      .main-chatbot {
+        margin-right: 0px;
+        opacity: 0;
+        width: 30%;
+        padding: 20px;
+        position: absolute;
+        z-index: 9000;
+        right: 0%;
+        top: 5%;
+      }
+      .main-chatbot.active {
+        opacity: 1;
+      }
+      .chat-output {
+        padding: 20px;
+        display: flex;
+        background-color: #edeff1;
+        flex-direction: column;
+        max-height: 60vh;
+        overflow: auto;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border: #272d33 2px solid;
+        border-bottom: none;
+        max-width: 500px;
+        background-color: aquamarine;
+      }
+      .chat-output > div {
+        margin: 0 0 20px 0;
+      }
+      .chat-output .user-message .message {
+        background: #272d33;
+        color: white;
+        overflow: auto;
+      }
+
+      .chat-output .bot-message {
+        text-align: right;
+      }
+
+      .chat-output .bot-message .message {
+        background: #fff;
+        overflow: auto;
+      }
+
+      .chat-output .message {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 10px;
+      }
+
+      .chat-input {
+        padding: 20px;
+        background: #edeff1;
+        border-top: 1px solid #edeff1;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: #272d33 2px solid;
+        border-top: none;
+      }
+
+      .chat-input .user-input {
+        width: 95%;
+        border: 1px solid #272d33;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      .chatbox-toggle {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        border-radius: 70px;
+        border-top-right-radius: 0px;
+        z-index: 9000;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .main-chatbot {
+          opacity: 0;
+          width: 100%;
+
+          position: absolute;
+          z-index: 100000;
+          right: 1%;
+          top: 5%;
+        }
+        .chatbox-toggle {
+          z-index: 100000;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .main-chatbot {
+          opacity: 0;
+          width: 50%;
+
+          position: absolute;
+          z-index: 100000;
+          right: 1%;
+          top: 5%;
+        }
+        .chatbox-toggle {
+          z-index: 100000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-chatbot">
+      <div class="botui-app-container" id="chat-bot-main">
+        <bot-ui> </bot-ui>
+      </div>
+    </div>
+    <button class="chatbox-toggle">
+      <i class="fa fa-comments" aria-hidden="true"></i>
+    </button>
+    <div class="b-navbar-container">
+      <!--navbar-1-start-->
+      <nav id="navbar-expand-lg-1" class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fa fa-chevron-circle-down"></span>
+        </button>
+        <a id="m-navbar-1-main" class="navbar-brand" href="/">
+          STUDENT COMPANION.</a
+        >
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div id="navbar-nav-1" class="navbar-nav"></div>
+        </div>
+      </nav>
+      <!--navbar-1-end-->
+    </div>
+    <!--edit area start-->
+
+    <form class="have-a-suggestion" method="POST" action="">
+      {% csrf_token %}
+      <h1>Have a suggestion ?</h1>
+     <p>Hey! Glad you have a suggestion for us. Feel free to add places around your college by filling the form below.</p>
+     <input name="name" type="text" placeholder="Name of the college" id="college" required />
+ 
+     <input name="name" type="text" placeholder="Name of the Place" id="name" required />
+      <textarea required name="message" placeholder="Short description about the place" required></textarea>
+      
+      <input name="name" type="text" placeholder="Your Name" id="yourName"  />
+
+      
+
+      <input type="submit" value="Send" id="button-blue" />
+    </form>
+    {% csrf_token %}
+    <!--footer start-->
+    <div class="b-footer">
+      <div class="col-sm-12">
+        <div class="inner-footer-2 display-flex-center">
+          <h2>STUDENT COMPANION.</h2>
+          <p>
+            STUDENT COMPANION is a one stop for all the needs of a freshie.
+            He/she can get to know about all their necessary places nearby their
+            college. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem.
+          </p>
+          <div class="button-container">
+            <a href="/about">About Us</a>
+            <a href="/faqs">FAQ</a>
+          </div>
+          <p class="copyright-paragraph">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+    <script src="suggestion.js"></script>
+  </body>
+  <!-- chatbot -->
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+  <script>
+    var button = document.querySelector(".chatbox-toggle");
+    button.onclick = function () {
+      document.querySelector(".chatbox-toggle").classList.toggle("active");
+      document.querySelector(".main-chatbot").classList.toggle("active");
+    };
+          var optionlst = [];
+          {% for college in colleges %}
+
+            optionlst.push({ text: "{{college}}", value: "{{college.id}}"});
+          {% endfor %}
+          function sendXHR(text,cb) {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+          var xhr = new XMLHttpRequest();
+          var self = this;
+          xhr.open('POST','/chatapi');
+
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+          xhr.send(JSON.stringify({ "message": text }));
+          var response = ""
+          xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    response = xhr.responseText;
+                    cb(response);
+                }
+            }
+
+          console.log(response);
+          return xhr.responseText
+
+
+        }
+
+        function sendXHRforShops(pk,type,cb) {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+          var xhr = new XMLHttpRequest();
+          var self = this;
+          xhr.open('POST','/filter');
+
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.setRequestHeader('X-CSRFToken', csrftoken);
+          xhr.send(JSON.stringify({ 'college': pk , 'filters':"-rating",'type': type}));
+          var response = ""
+          xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    response = xhr.responseText;
+                    cb(response);
+                }
+            }
+
+          console.log(response);
+          return xhr.responseText
+
+
+        }
+
+          var botui = new BotUI("chat-bot-main");
+          var loadingMsgIndex;
+          var collegeid;
+          var shopType;
+
+
+
+          //#5 API call
+          //messege from bot
+          botui.message.add({
+            content: "Hello from bot!",
+          });
+          //messege from human
+          botui.message.add({
+            delay: 300,
+            loading: true,
+            human: true,
+            content: "Hello!!",
+          });
+          //messege from bot
+          function initCategory(){
+            botui.message
+                    .add({
+                      content: "Enter college ",
+                    })
+                    .then(function () {
+                      return botui.action.select({
+                              action: {
+                                  placeholder : "Select Language",
+                                  value: 'TR',
+                                  searchselect : true,
+                                  label : 'text',
+                                  options : optionlst,
+                                  button: {
+                                    icon: 'check',
+                                    label: 'OK'
+                                  }
+                                }
+                            }).then(function (res) {
+                              collegeid = res.value;
+                            });
+                    })
+                    .then(function () {
+                      return botui.action.button({
+                        action: [
+                          {
+                            text: "Gym",
+                            value: "gym",
+                          },
+                          {
+                            text: "Hostel/PG's",
+                            value: "hostel",
+                          },
+                          {
+                            text: "Restraurants",
+                            value: "Restaurant",
+                          },
+                          {
+                            text: "Medical Facilities",
+                            value: "medicalFacility",
+                          },
+                          {
+                            text: "Book Stores",
+                            value: "bookStore",
+                          },
+                          {
+                            text: "Events",
+                            value: "Event",
+                          },
+                        ],
+                      });
+                    })
+                    .then(function (res) {
+                      shopType = res.value;
+                      console.log(collegeid,shopType,returnShops);
+                      sendXHRforShops(collegeid,shopType,returnShops);
+                      // console.log(res.value);
+                    })
+
+          }
+          function initChat(){
+            botui.message
+
+                        .add({
+                          content: "Enter query ",
+                        })
+                        .then(function () {
+                          return botui.action.text({
+                            action: {
+                              placeholder: "Your query",
+                            },
+                          });
+                        })
+                        .then(function (res) {
+                          loadingMsgIndex = botui.message.bot({
+                          delay: 200,
+                          loading: true
+                        }).then(function (index) {
+                          loadingMsgIndex = index;
+                          sendXHR(res.value, returnMessage)
+                        });
+                        })
+
+
+                }
+
+
+          function init() {
+            botui.message
+              .bot({
+                delay: 300,
+                content: "What would you like to do?",
+              })
+              .then(function () {
+                return botui.action.button({
+                  delay: 200,
+                  action: [
+                    {
+                      text: "Categories",
+                      value: "Categories",
+                    },
+                    {
+                      text: "Chat Bot",
+                      value: "Chat-Bot",
+                    },
+                  ],
+                });
+              })
+              .then(function (res) {
+                if (res.value == "Categories") {
+                  initCategory();
+                } else {
+                 initChat();
+                };
+          })
+    }
+          function returnMessage(stars) {
+            stars = JSON.parse(stars);
+            console.log(stars);
+          botui.message
+          .update(loadingMsgIndex, {
+             type: 'html',
+            content: '' + (stars['message'] || "0") + '.'
+          })
+          .then(initChat);
+        }
+
+        function returnShops(shops) {
+            stars = JSON.parse(shops);
+            console.log(stars);
+            var parrsedData = JSON.parse(stars["Data"])
+            for (i = 0; i < parrsedData.length; i++) {
+              name = parrsedData[i]["fields"]["ShopName"]
+              id = parrsedData[i]["pk"]
+            botui.message.add({
+              type: 'html',
+            content: `<a href="/shop/${id}">${name}  </a>`
+
+          });
+          }
+        }
+          init();
+  </script>
+
+  <!-- chatbot -->
+</html>

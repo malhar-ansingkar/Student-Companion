@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/botui/build/botui-theme-default.css"
+    />
+
+    <style>
+      button {
+  outline: none;
+}
+
+body {
+  background-color: #edeff1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* navbar-1 start */
+.b-navbar-container {
+  background-color: #272d33;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  align-self: center;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+#navbar-expand-lg-1 {
+  background: #edeff1;
+}
+#navbar-nav-1 {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+#m-navbar-1-item {
+  padding: 10px ;
+  text-align: center;
+  width: auto;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: #272d33;
+  font-family: "Verdana";
+  border-radius: 60px;
+  font-size: 0.7rem;
+}
+#m-navbar-1-main {
+  font-family: "Domine", serif;
+  color: #272d33;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+}
+@media only screen and (max-width: 768px) {
+ #m-navbar-1-main {
+  letter-spacing: normal;
+}    
+}
+/* navbar-1 end */
+
+/* navbar-2 start */
+label > input {
+  display: none;
+}
+
+#navbar-expand-lg-2 {
+  font-size: 1rem;
+}
+
+#navbar-nav-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#m-navbar-2-item {
+  color: white;
+  font-weight: bold;
+  height: 100%;
+}
+
+.new-navbar-2 {
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+.navbar-toggler-icon {
+  padding-top: 5px;
+}
+.fa-chevron-circle-down {
+  color: #272d33;
+}
+/* navbar-2 end */
+/* footer start */
+.main-footer {
+  width: 100%;
+  background-color: #272d33;
+}
+.b-footer {
+        width: 100%;
+        margin-top: 50px;
+        background-color: #272d33;
+        padding: 30px 12%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+.inner-footer-1 {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+  background-color: #fff;
+  margin-top: 4%;
+  border-radius: 50px;
+  padding: 30px 40px;
+}
+.inner-footer-1 h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.inner-footer-1 p {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.inner-footer-2 {
+  margin-top: 4%;
+  padding: 20px 0px;
+}
+
+.inner-footer-2 div button {
+  background: transparent;
+  border: 0px;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+#m-navbar-1-item {
+  background-color: #272d33;
+  color: #fff;
+}
+
+#m-footer-1-button {
+  background-color: #272d33;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.inner-footer-2 h2 {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.inner-footer-2 p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.inner-footer-2 .button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.copyright-paragraph {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+   
+        .b-footer {
+          padding: 0px;
+        }
+        .b-footer .col-sm-6 {
+          width: 100%;
+        }
+        .inner-footer-1 {
+          font-size: 1rem;
+        }
+        .inner-footer-1 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-1 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .inner-footer-2 p {
+          font-size: 1rem;
+        }
+        .inner-footer-2 div button {
+          font-size: 1rem;
+        }
+        .copyright-paragraph {
+          font-size: 5px;
+        }
+      }
+a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+/* footer end*/
+
+/*///////////// main content/////////////*/
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  width: 90%;
+  justify-self: center;
+  background-color: #edeff1;
+  flex-wrap: wrap;
+}
+
+.card-main {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  background-color: #edeff1;
+}
+.card-main-search {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+.search-input-area {
+  width: 70%;
+  padding-left: 10px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 50%;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+.search-input-button {
+  width: 10%;
+  height: 50%;
+  color: #2b2b2b;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: white;
+  outline: none;
+}
+.search-input-button:hover {
+  background-color: #272d33;
+  color: #fff;
+  outline: none;
+}
+.card-main-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-main-inner-card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-text-section {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 100%;
+  border-color: #edeff1;
+}
+
+.name_dist_rate {
+  padding: 10px 15px;
+  border-bottom: solid 3px rgb(223, 223, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name_dist_rate_title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.dist_rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+.dist {
+  color: #272d33;
+  font-size: 1rem;
+}
+
+.rating {
+  background-color: green;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.address {
+  margin-top: 5px;
+  padding: 0px 10px;
+  color: #272d33;
+  font-size: 1rem;
+}
+
+.time,
+.price {
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+.contact_dir_amt {
+  border-top: 2px solid rgb(206, 206, 206);
+  margin-top: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  outline: none;
+}
+.contact,
+.dir {
+  width: 50%;
+  border: none;
+  background-color: #fff;
+  color: #272d33;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+}
+
+.dir {
+  border-left: 2px solid rgb(209, 209, 209);
+  outline: none;
+}
+
+.filter-main {
+  width: 25%;
+  position: sticky;
+  top: 200px;
+  height: 400px;
+}
+
+#navbar-expand-lg-3 {
+  max-width: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #272d33;
+  font-weight: bolder;
+  
+}
+
+#navbar-nav-3 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+#m-navbar-3-item {
+  color: #272d33;
+  font-weight: bold;
+}
+
+.main-content a{
+  color: black;
+}
+.new-navbar-3 {
+  color: #272d33;
+  font-size: larger;
+  justify-self: center;
+  align-self: center;
+}
+.navbar-toggler-icon {
+  padding-top: 5px;
+}
+.fa-chevron-circle-down {
+  color: #272d33;
+  font-size: larger;
+}
+
+
+#Reset {
+  width: 100%;
+  outline: none;
+  background-color: #272d33;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  align-content: center;
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+    background-color: #edeff1;
+  }
+
+  .card-main {
+    width: 100%;
+    display: flex;
+    background-color: #edeff1;
+  }
+  h3{
+  font-size: 1rem;
+}
+  .card-main-inner-card {
+    width: 300px;
+    margin: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+  .filter-main {
+    width: 100%;
+    position: sticky;
+    top: 120px;
+    height: auto;
+  }
+
+  #navbar-expand-lg-3 {
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #272d33;
+    font-weight: bolder;
+  }
+
+  #navbar-nav-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #m-navbar-3-item {
+    color: #272d33;
+    font-weight: bold;
+  }
+
+
+  .new-navbar-3 {
+    color: #272d33;
+    font-size: larger;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .navbar-toggler-icon {
+    padding-top: 5px;
+  }
+
+  .fa-chevron-circle-down {
+    color: #272d33;
+    font-size: larger;
+  }
+
+  .btn-group {
+    width: 200px;
+    border-radius: 20px;
+  }
+
+  .btn {
+    background-color: #272d33;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+  }
+}
+
+fieldset input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 15px;
+  position: relative;
+  
+}
+
+fieldset label{
+ 
+ font-size: 1.3rem;
+}
+fieldset input:checked {
+  border: 6px solid #272d33;
+}
+  /* bot */
+  #chat-bot-main {
+        opacity: 0;
+        position: fixed;
+        z-index: 9000000;
+        top: 50px;
+        overflow: hidden;
+        right: 30px;
+        border-radius: 20px;
+        max-width: 400px;
+        border: 2px solid gray;
+      }
+
+      #chat-bot-main.active {
+        opacity: 1;
+      }
+
+      .chatbox-toggle {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 60px;
+        border-top-right-radius: 0px;
+        z-index: 90000;
+        background-color: #fff;
+        color: #272d33;
+        border-color: rgb(114, 114, 114);
+      }
+      .chatbox-toggle i {
+        font-size: 1.7rem;
+      }
+      .botui-container {
+        background-color: #edeff1;
+      }
+
+      .botui-message-content {
+        background-color: #fff;
+      }
+
+      .botui-message-content.human {
+        background-color: #272d33;
+      }
+      .botui-actions-buttons-button {
+        background-color: #272d33;
+      }
+
+      @media only screen and (max-width: 768px) {
+        #chat-bot-main {
+          right: 10px;
+          border-radius: 20px;
+          max-width: 300px;
+          height: 60vh;
+        }
+        .chatbox-toggle {
+          right: 10px;
+        }
+      }
+
+      /* bot */
+
+    </style>
+    
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="botui-app-container" id="chat-bot-main">
+      <bot-ui> </bot-ui>
+    </div>
+
+    <button class="chatbox-toggle">
+      <i class="fa fa-users" aria-hidden="true"></i>
+    </button>
+    <div class="b-navbar-container">
+      <!--navbar-1-start-->
+      <nav id="navbar-expand-lg-1" class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fa fa-chevron-circle-down"></span>
+        </button>
+        <a id="m-navbar-1-main" class="navbar-brand" href="/">
+          STUDENT COMPANION.</a
+        >
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div id="navbar-nav-1" class="navbar-nav">
+            <a id="m-navbar-1-item" class="nav-item nav-link" href="#">
+              {{college.name}}&ensp;<i
+                class="fa fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a id="m-navbar-1-item" class="nav-item nav-link" href="/suggestions"
+              >Have a suggestion ? &ensp;<i
+                class="fa fa-paper-plane"
+                aria-hidden="true"
+              ></i
+            ></a>
+            
+          </div>
+        </div>
+      </nav>
+      <!--navbar-1-end-->
+      <!--navbar-2-start-->
+      <nav id="navbar-expand-lg-2" class="navbar navbar-expand-lg">
+        
+        <button
+          class="navbar-toggler new-navbar-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup-2"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup-2">
+          <div id="navbar-nav-2" class="navbar-nav">
+            <a id="m-navbar-2-item" class="nav-item nav-link active" href="/{{college.id}}/gym">GYMS </a>
+            <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/Restaurant">RESTRAURANTS</a>
+            <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/hostel">HOSTEL/PG'S</a>
+            <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/medicalFacility">MEDICAL STORES</a>
+            <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/bookStore">BOOK STORES</a>
+            <a id="m-navbar-2-item" class="nav-item nav-link" href="/{{college.id}}/Event">
+              EVENTS</a>
+          </div>
+        </div>
+      </nav>
+      <!--navbar-2-end-->
+    </div>
+    <!--edit area start-->
+    <div class="main-content">
+      <div class="filter-main">
+        <nav id="navbar-expand-lg-3" class="navbar navbar-expand-lg">
+        <h3>FILTERS</h3>
+        <button
+          class="navbar-toggler new-navbar-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup-3"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup-3">
+          <div id="navbar-nav-3" class="navbar-nav">
+           <form >
+            <fieldset>
+              <input type="radio"  name="age" checked  value="AveragePrice">
+              <label for="age1">Price</label><br>
+              <input type="radio"  name="age" value="-rating">
+              <label for="age2">Rating</label><br>  
+              <input type="radio"  name="age" value="Amenities">
+              <label for="age3">Amenities</label>
+              <br>
+              <input type="radio"  name="age" value="distance">
+              <label for="age3">Distance</label>
+              <br><br><br><br>
+
+                
+                
+            </fieldset>
+            
+                  <button id="Reset">Clear Filters</button>     
+                </form>
+                </div>
+
+          </div> 
+        </div>
+       </nav>
+      <div class="card-main">
+        <div class="card-main-search">
+              <input class="search-input-area" id="search"  type="text" placeholder="Search.." name="search">
+              <button class="search-input-button" type="submit"  ><i class="fa fa-search"></i></button>
+        </div>
+
+{% csrf_token %}
+
+        <div class="card-main-inner">
+
+          {% for shop in shops %}
+          <div class="card-main-inner-card">
+            <img
+            src="{{ shop.image.url }}"
+            alt="card-show-image"
+            class="card-image"
+          />
+           
+        <div href="/{{shop.college.id}}/{{ shop.type}}" class="card-text-section">
+                <div class="name-and-description">
+                    
+                      <div class="name_dist_rate">
+                        <h4 class="name_dist_rate_title">{{shop}}</h4>
+                        <div class="dist_rate">
+                          <span class="dist"
+                            ><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;{{ shop.distance }}km
+                          </span>
+                          <span class="rating"
+                            >{{ shop.rating }}&ensp;<i class="fa fa-star" aria-hidden="true"></i
+                          ></span>
+                        </div>
+                      
+                        </div>
+                    <div class="address">
+                      {{ shop.description|slice:":75" }}...
+                    </div>
+                    <div class="time">Time: {{ shop.time }}</div>
+                    <div class="price">price: {{ shop.AveragePrice }} RS</div>
+                    
+                    <div class="contact_dir_amt">
+                      <button class="contact"><a target="blank" href="/shop/{{  shop.id  }}">DETAILS</a></button>
+                      <button class="dir"><a target="blank" href="{{  shop.Direction  }}">DIRECTION</a></button>
+                    </div>
+                
+            </div>
+          </div>
+         </div>
+
+          {% endfor %}
+         
+
+
+       </div>
+      </div>
+      </div>
+    <!--edit area end-->
+
+    <!--footer start-->
+    <div class="b-footer">
+      <div class="col-sm-6">
+        <div class="inner-footer-1">
+          <h2>Have a suggestion?</h2>
+          <p>
+            Are you a senior of a college? or do you know something about this
+            college? Help us out with your information to make our website
+            better.
+          </p>
+          <a id="m-footer-1-button" href="/suggestions">Let us Know</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="inner-footer-2 display-flex-center">
+          <h2>STUDENT COMPANION.</h2>
+          <p>
+            STUDENT COMPANION is a one stop for all the needs of a freshie.
+            He/she can get to know about all their necessary places nearby their
+            college. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+            ipsum lorem ipsum lorem.
+          </p>
+          <div class="button-container">
+            <a href="/about">About Us</a>
+            <a href="/faqs">FAQ</a>
+          </div>
+          <p class="copyright-paragraph">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+        <script src="new-filter.js" ></script>
+
+  </body>
+  <script>
+  console.log("fcdvdvddsvsvd");
+  var button = document.querySelector(".chatbox-toggle");
+    button.onclick = function () {
+      document.querySelector(".chatbox-toggle").classList.toggle("active");
+      document.querySelector("#chat-bot-main").classList.toggle("active");
+    };
+
+  // fetch("sample-data.JSON")
+  //   .then(response => response.json())
+  //   .then(data =>
+  //     console.log(data.category))
+const cardDataFeeder = (data,data2) =>
+    `
+    <div class="card-main-inner-card">
+            <img
+            src="/media/${data["image"]}"
+            alt="card-show-image"
+            class="card-image"
+          />
+           
+        <div href="/{{shop.college.id}}/{{ shop.type}}" class="card-text-section">
+                <div class="name-and-description">
+                    
+                      <div class="name_dist_rate">
+                        <h4 class="name_dist_rate_title">${data["ShopName"]}</h4>
+                        <div class="dist_rate">
+                          <span class="dist"
+                            ><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;${data["distance"]}km
+                          </span>
+                          <span class="rating"
+                            >${data["rating"]}&ensp;<i class="fa fa-star" aria-hidden="true"></i
+                          ></span>
+                        </div>
+                      
+                        </div>
+                    <div class="address">
+                      ${data["description"].substring(0, 75)}...
+                    </div>
+                    <div class="time">Time: ${data["time"]}</div>
+                    <div class="price">price: ${data["AveragePrice"]} RS</div>
+                    
+                    <div class="contact_dir_amt">
+                      <button class="contact"><a target="blank" href="/shop/${data2}">Details</a></button>
+                      <button class="dir"><a target="blank" href="${data["Direction"]}">DIRECTION</a></button>
+                    </div>
+                
+            </div>
+          </div>
+         </div>
+    `;
+
+//   // const cardDataFeeder1 = (data,data2) =>
+//     `
+// <div class="card-main-inner-card">
+// <img
+// src="/media/${data["image"]}"
+// alt="card-show-image"
+// class="card-image"
+// />
+
+// <div class="card-text-section">
+//     <div class="name-and-description">
+        
+//           <div class="name_dist_rate">
+//             <h4 class="name_dist_rate_title">${data["ShopName"]}</h4>
+//             <div class="dist_rate">
+//               <span class="dist"
+//                 ><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;${data["distance"]}km
+//               </span>
+//               <span class="rating"
+//                 >${data["rating"]}&ensp;<i class="fa fa-star" aria-hidden="true"></i
+//               ></span>
+//             </div>
+          
+//             </div>
+//         <div class="address">
+//         ${data["description"].substring(0, 75)}...
+//         </div>
+//         <div class="time">${data["time"]}</div>
+        
+//         <div class="contact_dir_amt">
+//           <button class="contact">
+//                   <a target="blank" href="/shop/${data2}">Details</a>
+//                 </button>
+//         <button class="dir">
+//           <a target="blank" href="${data["Direction"]}">DIRECTION</a>
+//         </button>
+              
+//         </div>
+    
+// </div>
+// </div>
+// </div>
+// `;
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+<script>
+  function distributeDetails(data) {
+    // console.log(data);
+    // console.log(data['Data']);
+    data = JSON.parse(data['Data']);
+    
+    allHTML = ""
+    for (let i = 0; i < data.length; i++) {
+      // console.log(data[i]);
+      allHTML += cardDataFeeder(data[i]["fields"],data[i]['pk']);
+    }
+    $(".card-main-inner").html(allHTML);
+    
+
+  }
+  function getData() {
+    collgepk = "{{ college.pk }}";
+    
+    type = "{{ type }}";
+    // distance = $('#distanceFilter').val();
+    // price = $('#pricefilter').val();
+    // rating = $('#ratingFilter').val();
+    // Amenities = $('#AmenitiesFilter').val();
+    filterc = $('input[name="age"]:checked').val();
+    data = { 'college': collgepk , filters:filterc,'type': type};
+    console.log(data)
+    var token = '{{csrf_token}}';
+
+    $.ajax({
+      url: '/filter',
+      type: 'POST',
+      headers: {
+        'X-CSRFToken': token,
+      },
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify(data),
+      dataType: 'text',
+      success: function (result) {
+
+        distributeDetails(JSON.parse(result));
+
+      }
+    });
+
+  }
+  $( "fieldset input" ).click(function() {
+    getData();
+});
+  // $(".filterchange").change(function () {
+  //   console.log("filter change")
+  //   getData();
+  // });
+  // lst = "{{ shops }}";
+  // {% for i in shops%}
+  // console.log({{i}});
+  // {% endfor %}
+  
+      // allHTML += cardDataFeeder(data[i]["fields"],data[i]['pk']);
+    // }
+  //  $(function () {
+  //       var availableTags = lst;
+  //       $("#search").autocomplete({
+  //         source: availableTags,
+  //         appendTo: "div#abc",
+  //         select: function (e, ui) {
+  //           console.log(ui);    
+  //           location.href = ui.item.the_link;
+  //           console.log(ui.item.the_link);
+  //         }
+  //       });
+  // });
+</script>
+<script >
+  console.log("working properly");
+
+
+var lst = [];
+{% for shop in shops %}
+  lst.push({ label: "{{shop}}", the_link: "/shop/{{shop.id}}"})
+{% endfor %}
+// console.log("{{ shop }}")
+
+
+
+
+
+     $(function () {
+        var availableTags = lst;
+        $("#search").autocomplete({
+          source: availableTags,
+          appendTo: "div#abc",
+          select: function (e, ui) {
+            console.log(ui);    // When you click (select) the ui object is returned , as well as the event
+            // You can get at the returned results ( the object via . (dot)  notation )
+            location.href = ui.item.the_link;
+            console.log(ui.item.the_link);
+          }
+        });
+        });
+
+</script>
+<!-- chatbot -->
+<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+    <script>
+      var optionlst = [];
+      {% for college in colleges %}
+        
+        optionlst.push({ text: "{{college}}", value: "{{college.id}}"});
+      {% endfor %}
+      function sendXHR(text,cb) {
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+      var xhr = new XMLHttpRequest();
+      var self = this;
+      xhr.open('POST','/chatapi');
+
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhr.setRequestHeader('X-CSRFToken', csrftoken);
+      xhr.send(JSON.stringify({ "message": text }));
+      var response = ""
+      xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                response = xhr.responseText;
+                cb(response);
+            }
+        }
+
+      console.log(response);
+      return xhr.responseText
+      
+      
+    }
+
+    function sendXHRforShops(pk,type,cb) {
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+      var xhr = new XMLHttpRequest();
+      var self = this;
+      xhr.open('POST','/filter');
+
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhr.setRequestHeader('X-CSRFToken', csrftoken);
+      xhr.send(JSON.stringify({ 'college': pk , 'filters':"-rating",'type': type}));
+      var response = ""
+      xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                response = xhr.responseText;
+                cb(response);
+            }
+        }
+
+      console.log(response);
+      return xhr.responseText
+      
+      
+    }
+      
+      var botui = new BotUI("chat-bot-main");
+      var loadingMsgIndex;
+      var collegeid;
+      var shopType;
+      
+      
+
+      //#5 API call
+      //messege from bot
+      botui.message.add({
+        content: "Hello from bot!",
+      });
+      //messege from human
+      botui.message.add({
+        delay: 300,
+        loading: true,
+        human: true,
+        content: "Hello!!",
+      });
+      //messege from bot
+      function initCategory(){
+        botui.message
+                .add({
+                  content: "Enter college ",
+                })
+                .then(function () {
+                  return botui.action.select({
+                          action: {
+                              placeholder : "Select Language", 
+                              value: 'TR', // Selected value or selected object. Example: {value: "TR", text : "Türkçe" }
+                              searchselect : true, // Default: true, false for standart dropdown
+                              label : 'text', // dropdown label variable
+                              options : optionlst,
+                              button: {
+                                icon: 'check',
+                                label: 'OK'
+                              }
+                            }
+                        }).then(function (res) { // will be called when a button is clicked.
+                          collegeid = res.value;
+                          // console.log(res.value); // will print "one" from 'value'
+                        });
+                })
+                .then(function () {
+                  return botui.action.button({
+                    action: [
+                      {
+                        text: "Gym",
+                        value: "gym",
+                      },
+                      {
+                        text: "Hostel/PG's",
+                        value: "hostel",
+                      },
+                      {
+                        text: "Restraurants",
+                        value: "Restaurant",
+                      },
+                      {
+                        text: "Medical Facilities",
+                        value: "medicalFacility",
+                      },
+                      {
+                        text: "Book Stores",
+                        value: "bookStore",
+                      },
+                      {
+                        text: "Events",
+                        value: "Event",
+                      },
+                    ],
+                  });
+                })
+                .then(function (res) {
+                  shopType = res.value;
+                  console.log(collegeid,shopType,returnShops);
+                  sendXHRforShops(collegeid,shopType,returnShops);
+                  // console.log(res.value);
+                })
+        
+      }
+      function initChat(){
+        botui.message
+                
+                    .add({
+                      content: "Enter query ",
+                    })
+                    .then(function () {
+                      return botui.action.text({
+                        action: {
+                          placeholder: "Your query",
+                        },
+                      });
+                    })
+                    .then(function (res) {
+                      loadingMsgIndex = botui.message.bot({
+                      delay: 200,
+                      loading: true
+                    }).then(function (index) {
+                      loadingMsgIndex = index;
+                      sendXHR(res.value, returnMessage)
+                    });
+                    })
+                    
+                
+            }
+      
+
+      function init() {
+        botui.message
+          .bot({
+            delay: 300,
+            content: "What would you like to do?",
+          })
+          .then(function () {
+            return botui.action.button({
+              delay: 200,
+              action: [
+                {
+                  text: "Categories",
+                  value: "Categories",
+                },
+                {
+                  text: "Chat Bot",
+                  value: "Chat-Bot",
+                },
+              ],
+            });
+          })
+          .then(function (res) {
+            if (res.value == "Categories") {
+              initCategory();
+            } else {
+             initChat();
+            };
+      })
+}
+      function returnMessage(stars) {
+        stars = JSON.parse(stars);
+        console.log(stars);
+      botui.message
+      .update(loadingMsgIndex, {
+         type: 'html',
+        content: '' + (stars['message'] || "0") + '.'
+      })
+      .then(initChat); // ask again for repo. Keep in loop.
+    }
+
+    function returnShops(shops) {
+        stars = JSON.parse(shops);
+        console.log(stars);
+        var parrsedData = JSON.parse(stars["Data"])
+        for (i = 0; i < parrsedData.length; i++) {
+          // console.log(parrsedData[i]);
+          name = parrsedData[i]["fields"]["ShopName"]
+          id = parrsedData[i]["pk"]
+        botui.message.add({
+          type: 'html',
+          // 'Go ahead, try [our product](https://example.com)'
+          // content:`'[${name}](http://127.0.0.1:8000/shop/${id})'`
+        content: `<a href="/shop/${id}">${name}  </a>`
+        
+      });
+      }
+      // botui.message
+      // .update(loadingMsgIndex, {
+      //   content: '' + (stars['message'] || "0") + '.'
+      // })
+      // .then(initChat); // ask again for repo. Keep in loop.
+    }
+      init();
+    </script>
+
+<!-- chatbot -->
+</html>
